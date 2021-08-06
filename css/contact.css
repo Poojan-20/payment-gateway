@@ -1,0 +1,226 @@
+/******** CSS RESET********/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: url('../img/larm-rmah-5em1lVBmvw8-unsplash.jpg')no-repeat center center/cover;
+    height: 100vh;
+}
+/******** navbar ********/
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    color: black;
+    background-color: white;
+}
+
+
+/******** LOGO AND IMG *******/
+
+#logo {
+    margin: 0px 0px;
+}
+
+#logo img {
+    height: 77px;
+    border-radius: 2px;
+    padding: 6px 41px;
+}
+
+/****** FORM STYLING *******/
+form{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.contact-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 85vh;
+    justify-content: center;
+}
+.con{
+   display: flex;
+   align-items: center;
+   width: 100%;
+   flex-direction: column; 
+}
+.form-group{
+    padding: 18px 4px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    font-size: 1.6rem;
+}
+.myinput{
+    outline: none;
+    border-radius: 25px;
+    border: 2px solid black;
+    font-size: 18px;
+    width: 600px;
+    padding:10px;
+    margin:5px 0px;
+}
+
+label{
+    color: white;
+}
+button{
+    font-size: 17px;
+    background: none;
+    border-radius: 23px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 4px 22px;
+    margin-left: 431px;
+    margin-right: 315px;
+    display: flex;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+ @media screen and (max-width: 768px) {
+    
+    #body2{
+        background: url('../img/larm-rmah-5em1lVBmvw8-unsplash.jpg')no-repeat center;
+    }
+    
+    /****** FORM STYLING *******/
+
+    .contact-container{
+        margin-top: 55px;
+        position: relative;
+        height: 100%;
+    }
+    .con{
+        width: 110%;
+    }
+    .form-group {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-group .myinput{
+        width: 100%;
+        font-size: 13px;
+    }
+    .btn{
+        display: block;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /******** NAVBAR LOGO HAMBURGER *******/
+    
+    .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+
+    #navbar
+    {
+        position: relative;
+    }
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+    
+    .nav-links {
+        position: fixed;
+        display: flex;
+        background: #5b78c7;
+        height: 29vh;
+        width: 100%;
+        top: -15px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        clip-path: circle(100px at 90% -10%);
+        -webkit-clip-path: circle(100px at 90% -50%);
+        transition: all 1s ease-out;
+        pointer-events: none; 
+    }
+     .nav-links.open {
+        clip-path: circle(1000px at 90% -20%);
+        -webkit-clip-path: circle(1000px at 90% -20%);
+        pointer-events: all;
+    }
+    .nav-links li a {
+        font-size: 18px;
+        font-weight: lighter;
+    }
+    .nav-links li:nth-child(1) {
+        transition: all 0.2s ease 0.2s;
+    }
+    .nav-links li:nth-child(2) {
+        transition: all 0.2s ease 0.2s;
+    }
+    .navlink li:nth-child(3) {
+        transition: all 0.2s ease 0.2s;
+    }
+    .navlink li:nth-child(4) {
+        transition: all 0.2s ease 0.2s;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+    li.fade {
+        opacity: 1;
+    }
+    .fade:not(.show) {
+          opacity: 1;
+      } 
+
+ }

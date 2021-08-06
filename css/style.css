@@ -1,0 +1,162 @@
+/**** CSS RESET *****/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/***** Navbar ******/
+
+
+#navbar {
+    top: 0px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/******* LOGO AND IMG *******/
+
+#logo {
+    margin: 0px 0px;
+}
+
+#logo img {
+    height: 77px;
+    border-radius: 2px;
+    padding: 0px 19px;
+}
+
+
+/****** HOME ******/
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    padding: 0px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('../img/noah-buscher-x8ZStukS2PM-unsplash.jpg')no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 828px;
+    width: 100%;
+    z-index: -1;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 61px;
+    font-size: 2.7rem;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+/***** Analytics ******/
+
+
+.analytics_box{
+    margin-top: 229px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: url('../img/analytics.jpg');
+  }
+  
+  .analytics_box .analytics_item {
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+  .analytics_box .analytics_item img {
+    width: 195px;
+    height: 195px;
+    margin: auto;
+    padding: 10px;
+    border: 4px double black;
+    border-radius: 50%;
+  }
+  
+   .analytics_count {
+    margin-top: 15px;
+  }
+  
+  .analytics_box .analytics_item .analytics_term {
+    font-variant: small-caps;
+    /* font-weight: bolder; */
+    letter-spacing: 1px;
+    font-size: 20px !important;
+  }
+  
+/***** SECTION HEADING ******/
+
+  .section{
+    font-family: "Akaya Telivigala", cursive;
+    color: darkslategray;
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: -155px;
+    padding-top: 11px;
+}
+  
+  .section span:nth-child(2) {
+    display: block;
+    margin: 6px auto;
+    width: 70px;
+    height: 4px;
+    border-radius: 10px;
+    background: rgba(102, 51, 153, 0.637);
+  }

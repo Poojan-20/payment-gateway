@@ -1,0 +1,108 @@
+/******** CSS RESET********/
+
+body{
+    overflow-x: hidden;
+}
+
+
+/******** NAVBAR LOGO HAMBURGER *******/
+
+#logo {
+    margin: 0px 6px;
+}
+
+.line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+}
+#navbar
+{
+    position: relative;
+}
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+}
+
+.nav-links {
+    position: fixed;
+    display: flex;
+    background: #5b78c7;
+    height: 40vh;
+    width: 100%;
+    top: -42px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -50%);
+    transition: all 1s ease-out;
+    pointer-events: none; 
+}
+ .nav-links.open {
+    clip-path: circle(1000px at 90% -20%);
+    -webkit-clip-path: circle(1000px at 90% -20%);
+    pointer-events: all;
+}
+.nav-links li a {
+    font-size: 25px;
+}
+.nav-links li:nth-child(1) {
+    transition: all 0.2s ease 0.2s;
+}
+.nav-links li:nth-child(2) {
+    transition: all 0.2s ease 0.2s;
+}
+.navlink li:nth-child(3) {
+    transition: all 0.2s ease 0.2s;
+}
+.navlink li:nth-child(4) {
+    transition: all 0.2s ease 0.2s;
+}
+.nav-links li {
+    opacity: 0;
+}
+li.fade {
+    opacity: 1;
+}
+.fade:not(.show) {
+      opacity: 1;
+  } 
+
+/****** HOME ******/
+  
+#home{
+    height: 430px;
+}
+#home h1 {
+    font-size: 41px;
+    margin: 43px 0px;
+    margin-top: 170px;
+}
+#home p {
+    margin-top: -16px;
+    padding: 5px 5px;
+    font-size: 23px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/***** SECTION HEADING ******/
+
+.section_heading {
+    font-family: "Akaya Telivigala", cursive;
+    color: darkslategray;
+    text-align: center;
+    margin-top: 212px;
+    padding-top: 20px;
+}
+.analytics_box {
+    margin-top: 180px;
+}
+
